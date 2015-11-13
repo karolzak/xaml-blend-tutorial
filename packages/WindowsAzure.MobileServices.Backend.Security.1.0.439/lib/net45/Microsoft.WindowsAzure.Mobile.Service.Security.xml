@@ -1,0 +1,452 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.WindowsAzure.Mobile.Service.Security</name>
+    </assembly>
+    <members>
+        <member name="F:Microsoft.WindowsAzure.Mobile.Service.AssemblyUtils.AssemblyVersionKey">
+            <summary>
+            The key identifying the <see cref="T:Microsoft.WindowsAzure.Mobile.Service.Models.StatusReport"/> value containing the assembly version for a particular report.  
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Mobile.Service.AssemblyUtils.GetExecutingAssemblyFileVersionOrDefault">
+            <summary>
+            Gets a string containing the <see cref="T:System.Reflection.AssemblyFileVersionAttribute"/> version information
+            for the current assembly.
+            </summary>
+            <returns>The file version.</returns>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Mobile.Service.AssemblyUtils.GetExecutingAssemblyVersionOrDefault">
+            <summary>
+            Gets a string containing the <see cref="T:System.Reflection.AssemblyFileVersionAttribute"/> and <see cref="T:System.Reflection.AssemblyInformationalVersionAttribute"/>
+            version information for the current assembly.
+            </summary>
+            <returns>The combined file and informational version.</returns>
+        </member>
+        <member name="M:System.Security.Claims.ClaimsIdentityExtensions.GetClaimValueOrNull(System.Security.Claims.ClaimsIdentity,System.String)">
+            <summary>
+            Returns the first claim value if found, or null.
+            </summary>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Mobile.Service.Properties.CommonResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.CommonResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.CommonResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.CommonResources.ArgMustBeGreaterThanOrEqualTo">
+            <summary>
+              Looks up a localized string similar to Argument must be greater than or equal to {0}..
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.CommonResources.ArgumentOutOfRange_GreaterThan">
+            <summary>
+              Looks up a localized string similar to The value must be greater than {0}..
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.CommonResources.ArgumentOutOfRange_InvalidEnum">
+            <summary>
+              Looks up a localized string similar to The value must be from the &apos;{0}&apos; enumeration..
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.CommonResources.ArgumentOutOfRange_LessThan">
+            <summary>
+              Looks up a localized string similar to The value must be less than {0}..
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.CommonResources.Assembly_UnknownFileVersion">
+            <summary>
+              Looks up a localized string similar to &lt;unknown&gt;.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.CommonResources.Assembly_UnknownInfoVersion">
+            <summary>
+              Looks up a localized string similar to &lt;unknown&gt;.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.CommonResources.DomainManager_Conflict">
+            <summary>
+              Looks up a localized string similar to The operation failed due to a conflict: &apos;{0}&apos;..
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.CommonResources.HttpHeaderToken_Invalid">
+            <summary>
+              Looks up a localized string similar to The format of value &apos;{0}&apos; is invalid. The character &apos;{1}&apos; is not a valid HTTP header token character..
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.CommonResources.LoginProvider_ProviderSkipped">
+            <summary>
+              Looks up a localized string similar to The login provider &apos;{0}&apos; has not been configured and as a result is not registered. If this is not the intention then please configure it through the portal..
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.CommonResources.ParameterInvalid">
+            <summary>
+              Looks up a localized string similar to The &apos;{0}&apos; parameter value is invalid..
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.CommonResources.ParameterNull">
+            <summary>
+              Looks up a localized string similar to The &apos;{0}&apos; parameter cannot be null..
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.CommonResources.Service_Healthy">
+            <summary>
+              Looks up a localized string similar to The service is considered to be in a healthy state..
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.CommonResources.Service_UnhealtyState">
+            <summary>
+              Looks up a localized string similar to Service is unhealthy. Please check the service logs to determine the issue and how to correct it..
+            </summary>
+        </member>
+        <member name="M:System.StringExtensions.FormatForUser(System.String,System.Object[])">
+            <summary>
+            Formats the input string to be user visible using <see cref="P:System.Globalization.CultureInfo.CurrentCulture"/>, per FxCop's rule
+            </summary>
+        </member>
+        <member name="M:System.StringExtensions.FormatInvariant(System.String,System.Object[])">
+            <summary>
+            Formats the input string to be user visible using <see cref="P:System.Globalization.CultureInfo.InvariantCulture"/>.
+            </summary>
+        </member>
+        <member name="M:System.StringExtensions.SplitAndTrim(System.String,System.Char[])">
+            <summary>
+            Splits a string into segments based on a given <paramref name="separator"/>. The segments are 
+            trimmed and empty segments are removed.
+            </summary>
+            <param name="input">The string to split.</param>
+            <param name="separator">An array of Unicode characters that delimit the substrings in this instance, an empty array that contains no delimiters, or null.</param>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> containing the resulting segments.</returns>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Mobile.Service.Security.WsFedCachingSecurityTokenProvider">
+            <summary>
+            A security token provider which retrieves the issuer and signing tokens from a WSFed metadata endpoint.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Security.WsFedCachingSecurityTokenProvider.Issuer">
+            <summary>
+            Gets the issuer the credentials are for.
+            </summary>
+            <value>
+            The issuer the credentials are for.
+            </value>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Security.WsFedCachingSecurityTokenProvider.SecurityTokens">
+            <summary>
+            Gets all known security tokens.
+            </summary>
+            <value>
+            All known security tokens.
+            </value>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Security.IssuerSigningKeys.Issuer">
+            <summary>
+            The token issuer.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Security.IssuerSigningKeys.Tokens">
+            <summary>
+            Signing tokens.
+            </summary>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Mobile.Service.Diagnostics.SecurityStatusReporter">
+            <summary>
+            Provides a <see cref="T:Microsoft.WindowsAzure.Mobile.Service.Models.StatusReport"/> for security extensions.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Mobile.Service.Diagnostics.SecurityStatusReporter.GetStatus(System.Web.Http.HttpConfiguration,Microsoft.WindowsAzure.Mobile.Service.ApiServices,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Diagnostics.SecurityStatusReporter.Name">
+            <inheritdoc />
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Mobile.Service.Properties.SecResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.SecResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.SecResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.SecResources.Authentication_AuthenticationFailed">
+            <summary>
+              Looks up a localized string similar to Authentication failed due to invalid credentials..
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.SecResources.Authentication_InvalidClaimsIdentity">
+            <summary>
+              Looks up a localized string similar to Expected a claims identity of type &apos;{0}&apos; but received type &apos;{1}&apos;. Authentication failed..
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.SecResources.Authentication_InvalidNonce">
+            <summary>
+              Looks up a localized string similar to Redirect from AzureActive Directory does not contain a valid nonce claim. Authentication failed..
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.SecResources.Authentication_InvalidToken">
+            <summary>
+              Looks up a localized string similar to Invalid token. Authentication failed with error: {0}.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.SecResources.Authentication_NoCookie">
+            <summary>
+              Looks up a localized string similar to Redirect from Azure Active Directory does not contain the required nonce cookie. Authentication failed..
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.SecResources.Authentication_NoProperties">
+            <summary>
+              Looks up a localized string similar to No authentication properties could be obtained from the current request. Authentication failed..
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.SecResources.Authentication_NoToken">
+            <summary>
+              Looks up a localized string similar to No token could be obtained from the current request. Authentication failed..
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Properties.SecResources.StatusReport_Description">
+            <summary>
+              Looks up a localized string similar to Windows Azure Mobile Services .NET Security Extension.
+            </summary>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectoryExtendedLoginProvider">
+            <summary>
+            Provides an <see cref="T:Microsoft.WindowsAzure.Mobile.Service.Security.LoginProvider"/> implementation providing support for Azure Active Directory authentication
+            using both client and server side flow.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectoryExtendedLoginProvider.#ctor(System.Web.Http.HttpConfiguration,Microsoft.WindowsAzure.Mobile.Service.Security.IServiceTokenHandler)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectoryExtendedLoginProvider"/> class with a given <paramref name="config"/>,
+            and <paramref name="tokenHandler"/>.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/> associated with this instance.</param>
+            <param name="tokenHandler">The <see cref="T:Microsoft.WindowsAzure.Mobile.Service.Security.IServiceTokenHandler"/> associated with this instance.</param>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectoryExtendedLoginProvider.ConfigureMiddleware(Owin.IAppBuilder,Microsoft.WindowsAzure.Mobile.Service.ServiceSettingsDictionary)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectoryExtendedLoginProvider.CreateCredentials(System.Security.Claims.ClaimsIdentity)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectoryExtendedLoginProvider.UseCustomAzureActiveDirectoryOpenIdConnectAuthentication(Owin.IAppBuilder,Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticationOptions)">
+            <summary>
+            Registers the OWIN middleware for Azure Active Directory server flow authentication.
+            </summary>
+            <remarks>
+            This is here for test mocking
+            </remarks>
+            <param name="appBuilder">The app builder</param>
+            <param name="options">The authentication options to use</param>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectoryExtendedLoginProvider.Audience">
+            <summary>
+            Gets the Azure Active Directory for this service as defined by <see cref="P:Microsoft.WindowsAzure.Mobile.Service.ServiceSettingsDictionary.AzureActiveDirectoryAudience"/>.
+            </summary>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectoryOpenIdConnectAuthenticationProvider">
+            <summary>
+            Provides a specialized <see cref="T:Microsoft.Owin.Security.OAuth.OAuthBearerAuthenticationProvider"/> used by the <see cref="T:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectoryExtendedLoginProvider"/>.
+            </summary>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.IAzureActiveDirectoryOpenIdConnectAuthenticationProvider">
+            <summary>
+            Provides an abstraction enabling the caller to extend or modify the authentication flow provided by
+            <see cref="T:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectoryExtendedLoginProvider"/>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.IAzureActiveDirectoryOpenIdConnectAuthenticationProvider.RequestToken(Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectRequestTokenContext)">
+            <summary>
+            Invoked before the <see cref="T:System.Security.Claims.ClaimsIdentity"/> is created. Gives the application an 
+            opportunity to find the identity from a different location, adjust, or reject the token.
+            </summary>
+            <param name="context">Contains the token string.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the completed operation.</returns>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.IAzureActiveDirectoryOpenIdConnectAuthenticationProvider.Authenticated(Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticatedContext)">
+            <summary>
+            Called each time a request identity has been validated by the middleware. Gives the application an 
+            opportunity to alter or reject the identity which has arrived with the request.
+            </summary>
+            <param name="context">Contains information about the login session as well as the user <see cref="T:System.Security.Claims.ClaimsIdentity"/>.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the completed operation.</returns>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectoryOpenIdConnectAuthenticationProvider.#ctor(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectoryLoginAuthenticationProvider"/> class 
+            with no tenant issuer validation.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/> for this service instance.</param>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectoryOpenIdConnectAuthenticationProvider.#ctor(System.Web.Http.HttpConfiguration,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectoryLoginAuthenticationProvider"/> class 
+            with tenant issuer validation.
+            </summary>
+            <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/> for this service instance.</param>
+            <param name="tenants">The set of tenants to validate.</param>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectoryOpenIdConnectAuthenticationProvider.Microsoft#WindowsAzure#Mobile#Service#Security#Providers#AzureActiveDirectory#IAzureActiveDirectoryOpenIdConnectAuthenticationProvider#RequestToken(Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectRequestTokenContext)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectoryOpenIdConnectAuthenticationProvider.Authenticated(Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticatedContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticatedContext">
+            <summary>
+            This class represents the context used as part of the <see cref="M:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticationHandler.AuthenticateCoreAsync"/>
+            code path.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticatedContext.#ctor(Microsoft.Owin.IOwinContext,System.String,System.Security.Claims.ClaimsIdentity)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticatedContext"/> class
+            </summary>
+            <param name="context">The <see cref="T:Microsoft.Owin.IOwinContext"/> representing the request/response context.</param>
+            <param name="idToken">The Azure Active Directory ID token.</param>
+            <param name="identity">The <see cref="T:System.Security.Claims.ClaimsIdentity"/> representing the user.</param>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticatedContext.IdToken">
+            <summary>
+            Gets the Azure Active Directory ID token.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticatedContext.Identity">
+            <summary>
+            Gets the <see cref="T:System.Security.Claims.ClaimsIdentity"/> representing the user.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticatedContext.IsValidated">
+            <summary>
+            Gets whether the user identity has been validated successfully. 
+            </summary>
+        </member>
+        <member name="T:Owin.AzureActiveDirectoryOpenIdConnectAuthenticationExtensions">
+            <summary>
+            Provides <see cref="T:Owin.IAppBuilder"/> extension methods for wiring up <see cref="T:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticationMiddleware"/>
+            as part of the OWIN application pipeline.
+            </summary>
+        </member>
+        <member name="M:Owin.AzureActiveDirectoryOpenIdConnectAuthenticationExtensions.UseAzureActiveDirectoryServerOpenIdConnectAuthentication(Owin.IAppBuilder,Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticationOptions)">
+            <summary>
+            Adds authentication using the <see cref="T:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticationMiddleware"/> authentication model.
+            </summary>
+            <param name="appBuilder">The <see cref="T:Owin.IAppBuilder"/> passed to the configuration method.</param>
+            <param name="options">Middleware configuration options.</param>
+            <returns>The updated <see cref="T:Owin.IAppBuilder"/>.</returns>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticationHandler.InvokeAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticationHandler.ProcessCallbackPathRequestAsync">
+            <summary>
+            Processes a request targeting the call back path set in the <see cref="T:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticationOptions"/>.
+            </summary>
+            <returns>Returning false will cause the common code to call the next middleware in line. Returning true will
+            cause the common code to begin the async completion journey without calling the rest of the middleware
+            pipeline.</returns>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticationHandler.AuthenticateCoreAsync">
+            <inheritdoc />
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticationOptions">
+            <summary>
+            The <see cref="T:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticationOptions"/> provides options for the OWIN <see cref="T:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticationMiddleware"/> class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticationOptions.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticationOptions"/> class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticationOptions.SignInAsAuthenticationType">
+            <summary>
+            Gets or sets the name of another authentication middleware which will be responsible for actually issuing a user <see cref="T:System.Security.Claims.ClaimsIdentity"/>.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticationOptions.Provider">
+            <summary>
+            Gets or sets the <see cref="T:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.IAzureActiveDirectoryOpenIdConnectAuthenticationProvider"/>
+            used to handle authentication events.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticationOptions.CallbackPath">
+            <summary>
+            Gets or sets the request path within the application's base path where the user-agent will be returned.
+            The middleware will process this request when it arrives.
+            </summary>
+            <remarks>Default value is <c>/signin-aad</c>.</remarks>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticationOptions.ClientId">
+            <summary>
+            Gets or sets the client ID.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticationOptions.Tenant">
+            <summary>
+            Gets or sets the tenant which is to be validated. Multi-tenant validation happens in <see cref="T:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectoryOpenIdConnectAuthenticationProvider"/>.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticationOptions.StateDataFormat">
+            <summary>
+            Gets or sets the format of the state data. If set to <c>null</c> then version 1 is used.
+            </summary>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectRequestTokenContext">
+            <summary>
+            This class represents the context used as part of the <see cref="M:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.IAzureActiveDirectoryOpenIdConnectAuthenticationProvider.RequestToken(Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectRequestTokenContext)"/>
+            code path.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectRequestTokenContext.#ctor(Microsoft.Owin.IOwinContext,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectRequestTokenContext"/> class
+            </summary>
+            <param name="context">The <see cref="T:Microsoft.Owin.IOwinContext"/> representing the request/response context.</param>
+            <param name="token">The Azure Active Directory token.</param>
+            <param name="state">The Azure Active state.</param>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectRequestTokenContext.Token">
+            <summary>
+            Gets or sets the token.
+            </summary>
+        </member>
+        <member name="P:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectRequestTokenContext.State">
+            <summary>
+            Gets or sets the state.
+            </summary>
+        </member>
+        <member name="T:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectReturnEndpointContext">
+            <summary>
+            This class represents the context used as part of the  
+            <see cref="M:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectAuthenticationHandler.ProcessCallbackPathRequestAsync"/>
+            code path.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectReturnEndpointContext.#ctor(Microsoft.Owin.IOwinContext,Microsoft.Owin.Security.AuthenticationTicket)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.WindowsAzure.Mobile.Service.Security.Providers.AzureActiveDirectory.AzureActiveDirectoryOpenIdConnectReturnEndpointContext"/> with a 
+            given <paramref name="context"/> and <paramref name="ticket"/>.
+            </summary>
+            <param name="context">OWIN environment.</param>
+            <param name="ticket">The authentication ticket.</param>
+        </member>
+    </members>
+</doc>

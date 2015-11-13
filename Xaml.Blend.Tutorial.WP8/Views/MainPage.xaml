@@ -1,0 +1,104 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:ViewModels="clr-namespace:Xaml.Blend.Tutorial.WP8.ViewModels"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:ec="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
+    x:Class="Xaml.Blend.Tutorial.WP8.Views.MainPage"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True"  
+>
+    <phone:PhoneApplicationPage.DataContext>
+        <ViewModels:MainPageViewModel/>
+    </phone:PhoneApplicationPage.DataContext>
+
+    <Grid>
+        <StackPanel Width="420" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <StackPanel Orientation="Horizontal">
+            <Button HorizontalAlignment="Stretch" Width="210" Content="Basics Start">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <ec:NavigateToPageAction TargetPage="/Views/BasicsPageStart.xaml"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Button>
+                <Button HorizontalAlignment="Stretch" Width="210" Content="Basics End">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <ec:NavigateToPageAction TargetPage="/Views/BasicsPageEnd.xaml"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button HorizontalAlignment="Stretch" Width="210" Content="Behaviors Start">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <ec:NavigateToPageAction TargetPage="/Views/BehaviorsPageStart.xaml"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Button>
+                <Button HorizontalAlignment="Stretch" Width="210" Content="Behaviors End">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <ec:NavigateToPageAction TargetPage="/Views/BehaviorsPageEnd.xaml"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Button>
+            </StackPanel>
+            <Button HorizontalAlignment="Stretch" Content="AMS Login" >
+            	<i:Interaction.Triggers>
+            		<i:EventTrigger EventName="Click">
+            			<i:InvokeCommandAction Command="{Binding LoginCommand, Mode=OneWay}"/>
+            		</i:EventTrigger>
+            	</i:Interaction.Triggers>
+               
+            </Button>
+            <Button HorizontalAlignment="Stretch" Content="AMS Logout" IsEnabled="{Binding IsLoggedIn}">
+            	<i:Interaction.Triggers>
+            		<i:EventTrigger EventName="Click">
+            			<i:InvokeCommandAction Command="{Binding LogoutCommand, Mode=OneWay}"/>
+            		</i:EventTrigger>
+            	</i:Interaction.Triggers>
+
+            </Button>
+            <Button HorizontalAlignment="Stretch" Content="AMS Push Register" IsEnabled="{Binding IsLoggedIn}">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <i:InvokeCommandAction Command="{Binding PushRegisterCommand, Mode=OneWay}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+
+            </Button>
+            <Button HorizontalAlignment="Stretch" Content="AMS Broadcaster" IsEnabled="{Binding IsPushRegistered}">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <i:InvokeCommandAction Command="{Binding BroadcasterCommand, Mode=OneWay}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+
+            </Button>
+            <Button HorizontalAlignment="Stretch" Content="AMS Single User Push" IsEnabled="{Binding IsPushRegistered}">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <i:InvokeCommandAction Command="{Binding SingleUserPushCommand, Mode=OneWay}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+
+            </Button>
+            <CheckBox Content="IsLoggedIn" IsChecked="{Binding IsLoggedIn, Mode=TwoWay}" />
+            <CheckBox Content="IsPushRegistered" IsChecked="{Binding IsPushRegistered, Mode=TwoWay}" />
+            
+        </StackPanel>
+    </Grid>
+    <!--LayoutRoot is the root grid where all page content is placed-->
+	
+</phone:PhoneApplicationPage>

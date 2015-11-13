@@ -1,0 +1,17 @@
+﻿<ViewModels:BasicsPageViewModel xmlns:ViewModels="using:Xaml.Blend.Tutorial.W81.ViewModels" xmlns:Models="using:Xaml.Blend.Tutorial.W81.Models">
+	<ViewModels:BasicsPageViewModel.PersonList>
+		<Models:PersonModel Color="#FF546F63" IsMale="True" Name="Aaberg, Jesper"/>
+		<Models:PersonModel Color="#FF5AE9FC" IsMale="False" Name="Adams, Ellen"/>
+		<Models:PersonModel Color="#FFEF5741" IsMale="True" Name="Adams, Terry"/>
+		<Models:PersonModel Color="#FF84CF7A" IsMale="False" Name="Adams, Terry"/>
+		<Models:PersonModel Color="#FFC070D9" IsMale="True" Name="Pfeiffer, Michael"/>
+		<Models:PersonModel Color="#FF22E361" IsMale="False" Name="Philips, Carol"/>
+		<Models:PersonModel Color="#FF931EA1" IsMale="True" Name="Poe, Toni"/>
+		<Models:PersonModel Color="#FF275A42" IsMale="False" Name="Hicks, Cassie"/>
+		<Models:PersonModel Color="#FF2D651F" IsMale="True" Name="Argentiero, Luca"/>
+		<Models:PersonModel Color="#FFA6CB35" IsMale="False" Name="Perry, Brian"/>
+	</ViewModels:BasicsPageViewModel.PersonList>
+	<ViewModels:BasicsPageViewModel.SelectedPerson>
+		<Models:PersonModel Color="#FFB5C47D" IsMale="True" Name="Ramos, Luciana"/>
+	</ViewModels:BasicsPageViewModel.SelectedPerson>
+</ViewModels:BasicsPageViewModel>
